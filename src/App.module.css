@@ -1,0 +1,32 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem; /* Можно немного увеличить, чтобы компенсировать */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  user-select: none;
+  z-index: 10;
+}
+
+.searchBarWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Убрали margin-bottom отсюда */
+}

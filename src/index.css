@@ -1,0 +1,11 @@
+@import url('https://cdn.jsdelivr.net/gh/vercel/geist-font@main/dist/geist-mono.css');
+
+body {
+  margin: 0;
+  font-family: 'Geist Mono', monospace;
+  background-color: #000000;
+  color: #E0E0E0;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

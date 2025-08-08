@@ -1,0 +1,20 @@
+.profileContainer {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  z-index: 10;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  border-color: #9f50ff;
+  box-shadow: 0 0 15px rgba(159, 80, 255, 0.5);
+}
