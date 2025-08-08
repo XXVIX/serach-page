@@ -1,9 +1,28 @@
-import React, { useRef } from 'react';
-import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
-import { FaGithub, FaYoutube, FaRedditAlien, FaFigma, FaCodepen } from 'react-icons/fa';
+import { useRef } from 'react';
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  useSpring,
+  MotionValue,
+} from 'framer-motion';
+import {
+  FaGithub,
+  FaYoutube,
+  FaRedditAlien,
+  FaFigma,
+  FaCodepen,
+} from 'react-icons/fa';
 import styles from './PinnedSites.module.css';
 
-const sites = [
+interface Site {
+  id: number;
+  name: string;
+  url: string;
+  icon: JSX.Element;
+}
+
+const sites: Site[] = [
   { id: 1, name: 'GitHub', url: 'https://github.com', icon: <FaGithub /> },
   { id: 2, name: 'YouTube', url: 'http://googleusercontent.com/youtube.com/2', icon: <FaYoutube /> },
   { id: 3, name: 'Codepen', url: 'https://codepen.io', icon: <FaCodepen /> },
@@ -11,10 +30,15 @@ const sites = [
   { id: 5, name: 'Figma', url: 'https://figma.com', icon: <FaFigma /> },
 ];
 
-const SiteIcon = ({ site, mouseX }) => {
+interface SiteIconProps {
+  site: Site;
+  mouseX: MotionValue<number>;
+}
+
+const SiteIcon = ({ site, mouseX }: SiteIconProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const distance = useTransform(mouseX, (val) => {
+  const distance = useTransform(mouseX, (val: number) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - bounds.x - bounds.width / 2;
   });

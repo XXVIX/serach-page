@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion'; // Вот так
 import Clock from './components/Clock/Clock';
 import SearchBar from './components/SearchBar/SearchBar';
 import Profile from './components/Profile/Profile';
@@ -8,7 +8,7 @@ import PinnedSites from './components/PinnedSites/PinnedSites';
 import styles from './App.module.css';
 
 function App() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -16,7 +16,7 @@ function App() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 30, opacity: 0, filter: 'blur(10px)' },
     visible: {
       y: 0,
@@ -39,11 +39,11 @@ function App() {
           Meow
         </motion.h1>
         <Profile />
-        
+
         <motion.div className={styles.clockWrapper} variants={itemVariants}>
           <Clock />
         </motion.div>
-        
+
         <motion.div className={styles.searchBarWrapper} variants={itemVariants}>
           <SearchBar />
         </motion.div>
@@ -51,7 +51,6 @@ function App() {
         <motion.div variants={itemVariants}>
           <PinnedSites />
         </motion.div>
-        
       </motion.div>
     </>
   );
