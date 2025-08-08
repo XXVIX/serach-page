@@ -53,7 +53,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repository:
     ```sh
-    git clone [https://github.com/YourUsername/YourRepositoryName.git](https://github.com/YourUsername/YourRepositoryName.git)
+    git clone
     ```
 2.  Navigate to the project directory:
     ```sh
@@ -122,7 +122,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Склонируйте репозиторий:
     ```sh
-    git clone [https://github.com/YourUsername/YourRepositoryName.git](https://github.com/YourUsername/YourRepositoryName.git)
+    git clone 
     ```
 2.  Перейдите в директорию проекта:
     ```sh
