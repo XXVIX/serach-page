@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.pinimg.com/736x/12/ae/cd/12aecd87236f65b83977851111052ad4.jpg" alt="Meow Search Banner" width="400">
+  <img src="https://i.pinimg.com/736x/12/ae/cd/12aecd87236f65b83977851111052ad4.jpg" alt="Meow Search Banner" width="600">
 </p>
 
 <h1 align="center">Meow Search</h1>
